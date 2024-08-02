@@ -22,6 +22,8 @@ print(b_1)
 
 print(len(b))
 print(len(b2))
-print("TTFDd" in b)
+print("tTFDG" in b)
 
 print(b[4:-2:2])
+print(b[10])
+print(b[10:15:2])
