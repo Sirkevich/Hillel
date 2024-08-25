@@ -14,3 +14,18 @@
 # assert add_one([0]) == [1], 'Test3'
 # assert add_one([9]) == [1, 0], 'Test4'
 # print("ОК")
+
+
+def add_one(some_list):
+
+    some_list_str = ''.join([str(elem) for elem in some_list])
+
+    some_list_str = int(some_list_str) + 1
+
+    result_lst = [int(elem) for elem in str(some_list_str)]
+
+    return result_lst
+
+
+result = add_one([9, 9, 9])
+print(result)

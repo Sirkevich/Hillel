@@ -9,3 +9,16 @@
 # assert find_unique_value([2, 3, 3, 3, 5, 5]) == 2, 'Test2'
 # assert find_unique_value([5, 5, 5, 2, 2, 0.5]) == 0.5, 'Test3'
 # print("ОК")
+
+
+def find_unique_value(some_list: list):
+    result = None
+    for elem in some_list:
+        if some_list.count(elem) == 1:
+            result = elem
+            break
+
+    return result
+
+
+print(find_unique_value([5, 5, 5, 2, 2, 0.5]))
