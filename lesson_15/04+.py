@@ -4,6 +4,9 @@ class People:
         self.second_name = second_name
         self.__age = age
 
+    def __iter__(self):
+        pass
+
     @property
     def age(self):
         return self.__age
@@ -24,3 +27,6 @@ a_1.age = 25
 print(a_1.age)
 a_1.age = 125
 print(a_1.age)
+
+for item in a_1:
+    pass
